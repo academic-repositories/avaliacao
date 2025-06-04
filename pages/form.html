@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_self"></a></li>
+                <li><a href="./pages/form.html" target="_self"></a></li>
+                <li><a href="./pages/display.html" target="_self"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2></h2>
+            <p></p>
+            <form method="post">
+                <label for="nomeInstituicao"></label>
+                <input type="text" id="nomeInstituicao" required>
+                
+                <label for="tipoAjuda"></label>
+                <select id="tipoAjuda">
+                    <option value="educacao"></option>
+                    <option value="saude"></option>
+                    <option value="meioAmbiente"></option>
+                    <option value="doacaoAlimentos"></option>
+                    <option value="doacaoRoupas"></option>
+                    <option value="outros"></option>
+                </select>
+                
+                <label for="tituloNecessidade"></label>
+                <input type="text" id="tituloNecessidade" maxlength="30" placeholder="Descrição breve" required>
+                
+                <label for="descricao"></label>
+                <textarea id="descricao" rows="" cols="" placeholder="Digite aqui a descrição completa..." required></textarea>
+
+                <label for="cep"></label>
+                <input type="text" id="cep" required>
+
+                <fieldset>
+                    <caption></caption>
+                        
+                    <label for="rua"></label>
+                    <input type="text" id="rua" required readonly>
+
+                    <label for="bairro"></label>
+                    <input type="text" id="bairro" required readonly>
+
+                    <label for="cidade"></label>
+                    <input type="text" id="cidade" required readonly>
+
+                    <label for="estado"></label>
+                    <input type="text" id="estado" required readonly>
+                </fieldset>
+
+                <label for="contato"></label>
+                <input type="text" id="contato" placeholder="Digite e-mail ou telefone da instituição" required>
+
+                <button type="submit"></button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section></section>
+    </footer>
+</body>
+</html>
